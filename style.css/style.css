@@ -275,7 +275,7 @@ h1:hover {
 
 .section-2 {
   color: #333;
-  height: 40vh;
+  height: 60vh;
 }
 
 .box {
@@ -317,7 +317,7 @@ h1:hover {
   background-color: lightgray;
   cursor: pointer;
   border: 1px solid #fff;
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .box-2:hover {
