@@ -1,0 +1,75 @@
+.main {
+  max-width: 100vh;
+}
+
+.content {
+  left: 4%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+.road {
+  width: 1500%;
+}
+
+.car {
+  width: 300px;
+  bottom: 80px;
+}
+
+.wheel {
+  left: 50%;
+  bottom: 190px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.wheel img {
+  width: 68px;
+  height: 68px;
+  animation: wheel 1s linear infinite;
+}
+
+.wheel-2 {
+  position: absolute;
+  left: -125px;
+}
+
+.wheel-1 {
+  position: absolute;
+  left: 53px;
+}
+
+.section-2 {
+  height: 120vh;
+}
+
+.box {
+  flex-direction: column;
+}
+
+.box-1 {
+  margin: 1rem;
+}
+
+.box-2 {
+  margin: 1rem;
+}
+
+.box-3 {
+  margin: 1rem;
+}
+
+.menu-wrap .menu > div {
+  background: #333;
+  z-index: 1;
+}
+
