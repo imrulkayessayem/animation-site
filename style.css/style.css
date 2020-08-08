@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+  --animate-speed: 1s;
+}
+
+.main {
+  background: url('/img/jason-leung-Xaanw0s0pMk-unsplash.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  color: #333;
+  padding: 20px 40px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 25px;
+  transition: 1s;
+  transform: translateX(-700px);
+  animation: heading var(--animate-speed) forwards ease-in 2.5s;
+}
+
+@keyframes heading {
+  to {
+    transform: translateX(0);
+  }
+}
+
+button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+  transform: translateX(-700px);
+  animation: heading var(--animate-speed) forwards ease-in 2s;
+  transition: 1s;
+}
+
+@keyframes heading {
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1:hover {
+  color: rgba(255, 255, 255, 0.849);
+}
+
+.bubble img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+
+.bubble {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-90vh);
+    opacity: 0;
+  }
+}
+
+.bubble img:nth-child(1) {
+  animation-delay: 2s;
+  width: 140px;
+}
+
+.bubble img:nth-child(2) {
+  animation-delay: 3.5s;
+}
+
+.bubble img:nth-child(3) {
+  animation-delay: 5s;
+}
+
+.bubble img:nth-child(4) {
+  animation-delay: 4s;
+  width: 30px;
+}
+
+.bubble img:nth-child(5) {
+  animation-delay: 1s;
+  width: 100px;
+}
+
+.bubble img:nth-child(6) {
+  animation-delay: 4.6s;
+}
+
+.bubble img:nth-child(7) {
+  animation-delay: 4s;
+  width: 70px;
+}
+
+/* Section */
+
+.section-1 {
+  background: url(/img/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-1 h1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  animation: heading-2 var(--animate-speed) forwards ease-in 2s;
+  transform: translateY(-1000px);
+}
+
+@keyframes heading-2 {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.road {
+  background: url(/img/road.jpg);
+  background-repeat: repeat-x;
+  height: 200px;
+  width: 500%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: road 5s linear infinite;
+}
+
+@keyframes road {
+  to {
+    transform: translateX(-3000px);
+  }
+}
+
+.city {
+  background: url('/img/city.png');
+  background-repeat: repeat-x;
+  height: 200px;
+  width: 500%;
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: city 30s linear infinite;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+
+.car {
+  left: 50%;
+  width: 380px;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
+@keyframes car {
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(-1px);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.wheel {
+  left: 50%;
+  bottom: 225px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+
+.wheel img {
+  width: 72px;
+  height: 72px;
+  animation: wheel 1s linear infinite;
+}
+
+.wheel-2 {
+  position: absolute;
+  left: -150px;
+}
+
+.wheel-1 {
+  position: absolute;
+  left: 76px;
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
