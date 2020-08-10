@@ -105,7 +105,7 @@ h1:hover {
   }
 
   100% {
-    transform: translateY(-90vh);
+    transform: translateY(-100vh);
     opacity: 0;
   }
 }
@@ -227,15 +227,15 @@ h1:hover {
 
 @keyframes car {
   0% {
-    transform: translateY(-2px);
-  }
-
-  50% {
     transform: translateY(-1px);
   }
 
+  50% {
+    transform: translateY(-10px);
+  }
+
   100% {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 }
 
@@ -265,7 +265,7 @@ h1:hover {
 
 @keyframes wheel {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(600deg);
   }
 }
 
@@ -324,6 +324,8 @@ h1:hover {
   border: 2px solid #000;
   box-shadow: none;
 }
+
+
 
 /* Footer */
 
